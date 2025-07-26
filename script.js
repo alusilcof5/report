@@ -73,7 +73,7 @@
             const statsHtml = `
                 <div class="stat-card">
                     <div class="stat-header">
-                        <div class="stat-icon"></div>
+                       
                     </div>
                     <div class="stat-value">${formatCurrency(totalSales)}</div>
                     <div class="stat-label">Total Revenue</div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-header">
-                        <div class="stat-icon"></div>
+                        
                     </div>
                     <div class="stat-value">${formatNumber(totalOrders)}</div>
                     <div class="stat-label">Total Orders</div>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-header">
-                        <div class="stat-icon">⚡</div>
+                        
                     </div>
                     <div class="stat-value">${formatCurrency(avgOrderValue)}</div>
                     <div class="stat-label">Average Order Value</div>
@@ -106,7 +106,8 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-header">
-                        <div class="stat-icon"></div>
+                        
+                    
                     </div>
                     <div class="stat-value">${uniqueProducts}</div>
                     <div class="stat-label">Product Categories</div>

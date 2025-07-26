@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sales Analytics Dashboard - Executive View</title>
+    <title>Panel de Análisis de Ventas - Vista Ejecutiva</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -11,54 +11,50 @@
 <body>
     <div class="dashboard-header">
         <div class="container">
-            <h1>Analytics Dashboard</h1>
+            <h1>Panel de Control</h1>
         </div>
     </div>
 
     <div class="container">
         <div class="file-upload">
-            <h3>Data Import</h3>
+            <h3>Importación de Datos</h3>
             <input type="file" id="csvFile" accept=".csv" class="file-input" />
-            <p class="upload-text">Select your CSV file to begin analysis</p>
+            <p class="upload-text">Selecciona tu archivo CSV para comenzar el análisis</p>
         </div>
 
         <div id="stats" class="stats-grid" style="display: none;"></div>
 
         <div id="loading" class="loading" style="display: none;">
             <div class="loading-spinner"></div>
-            <div class="loading-text">Processing data...</div>
+            <div class="loading-text">Procesando datos...</div>
         </div>
 
         <div id="evolucion-ventas" class="chart-section" style="display: none;">
             <div class="chart-header">
-                <div class="chart-title"> Data Analysis</div>
-                <div class="chart-subtitle">Sales Evolution Over Time</div>
+                <div class="chart-title">Análisis de Datos</div>
+                <div class="chart-subtitle">Evolución de las Ventas a lo Largo del Tiempo</div>
             </div>
-           
         </div>
         
         <div id="ventas-categoria" class="chart-section" style="display: none;">
             <div class="chart-header">
-                <div class="chart-title">Category Performance Matrix</div>
-                <div class="chart-subtitle">Top performing product categories by revenue</div>
+                <div class="chart-title">Matriz de Rendimiento por Categoría</div>
+                <div class="chart-subtitle">Categorías de productos con mayor rendimiento por ingresos</div>
             </div>
-            
         </div>
         
         <div id="ventas-region" class="chart-section" style="display: none;">
             <div class="chart-header">
-                <div class="chart-title">Geographic Revenue Distribution</div>
-                <div class="chart-subtitle">Market performance across regions</div>
+                <div class="chart-title">Distribución Geográfica de Ingresos</div>
+                <div class="chart-subtitle">Rendimiento del mercado en distintas regiones</div>
             </div>
-           
         </div>
         
         <div id="ventas-canal" class="chart-section" style="display: none;">
             <div class="chart-header">
-                <div class="chart-title">Channel Mix Analysis</div>
-                <div class="chart-subtitle">Revenue distribution across sales channels</div>
+                <div class="chart-title">Análisis de Mezcla de Canales</div>
+                <div class="chart-subtitle">Distribución de ingresos por canales de venta</div>
             </div>
-           
         </div>
     </div>
     <script src="script.js"></script> 
